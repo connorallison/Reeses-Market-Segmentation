@@ -1,0 +1,603 @@
+libname mylib "P:\";
+filename datadict "P:\Market Segmentation\fa15_data.txt" lrecl = 65576;
+
+data mytemp;
+infile datadict;
+input
+
+myid 1-7
+reeses_mo 32771
+
+exer_once_week_aglo 4624
+exer_once_week_agli 4701
+exer_once_week_nead 4855
+exer_once_week_dgli 4932
+exer_once_week_dglo 5009
+prov_kids_with_aglo 4649
+prov_kids_with_agli 4726
+prov_kids_with_nead 4880
+prov_kids_with_dgli 4957
+prov_kids_with_dglo 5034
+legal_pot_aglo 4655
+legal_pot_agli 4732
+legal_pot_nead 4886
+legal_pot_dgli 4963
+legal_pot_dglo 5040
+careful_w_money_aglo 6102
+careful_w_money_agli 6123
+careful_w_money_nead 6165
+careful_w_money_dgli 6186
+careful_w_money_dglo 6207
+
+dr_impt_when_ill_aglo 5153
+dr_impt_when_ill_agli 5202
+dr_impt_when_ill_nead 5300
+dr_impt_when_ill_dgli 5349
+dr_impt_when_ill_dglo 5398
+try_health_food_aglo 5151
+try_health_food_agli 5200
+try_health_food_nead 5298
+try_health_food_dgli 5347
+try_health_food_dglo 5396
+concern_teeth_gums_aglo 5191
+concern_teeth_gums_agli 5240
+concern_teeth_gums_nead 5338
+concern_teeth_gums_dgli 5387
+concern_teeth_gums_dglo 5436
+regular_checkups_aglo 5149
+regular_checkups_agli 5198
+regular_checkups_nead 5296
+regular_checkups_dgli 5345
+regular_checkups_dglo 5394
+
+snack_btwn_meals_aglo 4280
+snack_btwn_meals_agli 4327
+snack_btwn_meals_nead 4421
+snack_btwn_meals_dgli 4468
+snack_btwn_meals_dglo 4515
+alcohol_at_restur_aglo 4291
+alcohol_at_restur_agli 4338
+alcohol_at_restur_nead 4432
+alcohol_at_restur_dgli 4479
+alcohol_at_restur_dglo 4526
+freq_eat_sweets_aglo 4292
+freq_eat_sweets_agli 4339
+freq_eat_sweets_nead 4433
+freq_eat_sweets_dgli 4480
+freq_eat_sweets_dglo 4527
+treat_myself_aglo 4034
+treat_myself_agli 4053
+treat_myself_nead 4091
+treat_myself_dgli 4110
+treat_myself_dglo 4129
+
+twx_candy_mo 32788
+snickers_candy_mo 32778
+
+race_white 2420
+race_black 2421
+race_asian 2422
+race_other 2423
+race_not_whiteblack 2424
+
+monthly_netflix 14247
+monthly_hulu 14245
+monthly_amzprime 14241
+
+hispanic_yes 2371
+hispanic_no 2372
+
+gender_male 2383
+gender_female 2384
+
+floor_ads_alw 44697
+floor_ads_some 44712
+floor_ads_nvr 44727
+cart_ads_alw 44698
+cart_ads_some 44713
+cart_ads_nvr 44728
+display_w_product_alw 44701
+display_w_product_some 44716
+display_w_product_nvr 44731
+
+run;
+
+
+proc format;
+value my5scale
+    1 = "disagree a lot"
+    2 = "disagree a little"
+    3 = "neither agree nor disagree"
+    4 = "agree a little"
+    5 = "agree a lot";
+value yesno
+    0 = "no"
+    1 = "yes";
+value my3scale
+	1 = "never"
+	2 = "sometimes"
+	3 = "always"
+run;
+
+/* do that by creating a new temp sas data set myvars by starting with the temp sas data set mytemp */
+data myvars;
+set mytemp;
+
+if exer_once_week_aglo = 1 then weekly_exercise = 5;
+if exer_once_week_agli = 1 then weekly_exercise = 4;
+if exer_once_week_nead = 1 then weekly_exercise = 3;
+if exer_once_week_dgli = 1 then weekly_exercise = 2;
+if exer_once_week_dglo = 1 then weekly_exercise = 1;
+if prov_kids_with_aglo = 1 then provide_kids = 5;
+if prov_kids_with_agli = 1 then provide_kids = 4;
+if prov_kids_with_nead = 1 then provide_kids = 3;
+if prov_kids_with_dgli = 1 then provide_kids = 2;
+if prov_kids_with_dglo = 1 then provide_kids = 1;
+if legal_pot_aglo = 1 then legalize_pot = 5;
+if legal_pot_agli = 1 then legalize_pot = 4;
+if legal_pot_nead = 1 then legalize_pot = 3;
+if legal_pot_dgli = 1 then legalize_pot = 2;
+if legal_pot_dglo = 1 then legalize_pot = 1;
+if careful_w_money_aglo = 1 then care_w_money = 5;
+if careful_w_money_agli = 1 then care_w_money = 4;
+if careful_w_money_nead = 1 then care_w_money = 3;
+if careful_w_money_dgli = 1 then care_w_money = 2;
+if careful_w_money_dglo = 1 then care_w_money = 1;
+
+if dr_impt_when_ill_aglo = 1 then dr_when_ill = 5;
+if dr_impt_when_ill_agli = 1 then dr_when_ill = 4;
+if dr_impt_when_ill_nead = 1 then dr_when_ill = 3;
+if dr_impt_when_ill_dgli = 1 then dr_when_ill = 2;
+if dr_impt_when_ill_dglo = 1 then dr_when_ill = 1;
+if try_health_food_aglo = 1 then eat_healthy = 5;
+if try_health_food_agli = 1 then eat_healthy = 4;
+if try_health_food_nead = 1 then eat_healthy = 3;
+if try_health_food_dgli = 1 then eat_healthy = 2;
+if try_health_food_dglo = 1 then eat_healthy = 1;
+if concern_teeth_gums_aglo = 1 then teeth_gums = 5;
+if concern_teeth_gums_agli = 1 then teeth_gums = 4;
+if concern_teeth_gums_nead = 1 then teeth_gums = 3;
+if concern_teeth_gums_dgli = 1 then teeth_gums = 2;
+if concern_teeth_gums_dglo = 1 then teeth_gums = 1;
+if regular_checkups_aglo = 1 then checkups = 5;
+if regular_checkups_agli = 1 then checkups = 4;
+if regular_checkups_nead = 1 then checkups = 3;
+if regular_checkups_dgli = 1 then checkups = 2;
+if regular_checkups_dglo = 1 then checkups = 1;
+
+if snack_btwn_meals_aglo = 1 then snack = 5;
+if snack_btwn_meals_agli = 1 then snack = 4;
+if snack_btwn_meals_nead = 1 then snack = 3;
+if snack_btwn_meals_dgli = 1 then snack = 2;
+if snack_btwn_meals_dglo = 1 then snack = 1;
+if alcohol_at_restur_aglo = 1 then alcohol = 5;
+if alcohol_at_restur_agli = 1 then alcohol = 4;
+if alcohol_at_restur_nead = 1 then alcohol = 3;
+if alcohol_at_restur_dgli = 1 then alcohol = 2;
+if alcohol_at_restur_dglo = 1 then alcohol = 1;
+if freq_eat_sweets_aglo = 1 then sweets = 5;
+if freq_eat_sweets_agli = 1 then sweets = 4;
+if freq_eat_sweets_nead = 1 then sweets = 3;
+if freq_eat_sweets_dgli = 1 then sweets = 2;
+if freq_eat_sweets_dglo = 1 then sweets = 1;
+if treat_myself_aglo = 1 then treat_self = 5;
+if treat_myself_agli = 1 then treat_self = 4;
+if treat_myself_nead = 1 then treat_self = 3;
+if treat_myself_dgli = 1 then treat_self = 2;
+if treat_myself_dglo = 1 then treat_self = 1;
+
+/* now set up binary yes – no variables knowing that missing values get a zero and a 1 gets a 1 */
+if reeses_mo = . then rpbc = 0;
+if reeses_mo = 1 then rpbc = 1;
+
+if twx_candy_mo = . then twx = 0;
+if twx_candy_mo = 1 then twx = 1;
+if snickers_candy_mo = . then snickers = 0;
+if snickers_candy_mo = 1 then snickers = 1;
+
+if race_white = . then white = 0;
+if race_white = 1 then white = 1;
+if race_black = . then black = 0;
+if race_black = 1 then black = 1;
+if race_asian = . then asian = 0;
+if race_asian = 1 then asian = 1;
+if race_other = . then other_race = 0;
+if race_other = 1 then other_race = 1;
+if race_not_whiteblack = . then not_W_or_B = 0;
+if race_not_whiteblack = 1 then not_W_or_B = 1;
+
+if monthly_netflix = . then netflix = 0;
+if monthly_netflix = 1 then netflix = 1;
+if monthly_hulu = . then hulu = 0;
+if monthly_hulu = 1 then hulu = 1;
+if monthly_amzprime = . then amzprime = 0;
+if monthly_amzprime = 1 then amzprime = 1;
+
+if hispanic_yes = . then hispanic_y = 0;
+if hispanic_yes = 1 then hispanic_y = 1;
+if hispanic_no = . then hispanic_n = 0;
+if hispanic_no = 1 then hispanic_n = 1;
+
+if gender_male = . then male = 0;
+if gender_male = 1 then male = 1;
+if gender_female = . then female = 0;
+if gender_female = 1 then female = 1;
+
+/* set up variable for three-point shopping scale*/
+if floor_ads_alw = 1 then floor_ads = 3;
+if floor_ads_some = 1 then floor_ads = 2;
+if floor_ads_nvr = 1 then floor_ads = 1;
+if cart_ads_alw = 1 then cart_ads = 3;
+if cart_ads_some = 1 then cart_ads = 2;
+if cart_ads_nvr = 1 then cart_ads = 1;
+if display_w_product_alw = 1 then display = 3;
+if display_w_product_some = 1 then display = 2;
+if display_w_product_nvr = 1 then display = 1;
+
+/* now attach the values for each of the variables using the proc format labels */
+format   weekly_exercise  provide_kids  legalize_pot  care_w_money
+		 dr_when_ill  eat_healthy  teeth_gums  checkups  
+		 snack  alcohol  sweets  treat_self  my5scale.
+
+		 rpbc  twx  snickers
+		 white  black  asian  other_race  not_W_or_B
+		 netflix  hulu  amzprime  
+		 hispanic_y  hispanic_n  male  female  yesno.
+
+		 floor_ads  cart_ads  display  my3scale. ;
+run;
+
+/* now run freqs to check your work */
+proc freq data = myvars;
+tables
+rpbc
+weekly_exercise
+provide_kids
+legalize_pot
+care_w_money
+dr_when_ill
+eat_healthy
+teeth_gums
+checkups 
+snack
+alcohol
+sweets
+treat_self
+twx
+snickers
+white
+black
+asian
+other_race
+not_W_or_B
+netflix
+hulu
+amzprime  
+hispanic_y
+hispanic_n
+male
+female
+floor_ads
+cart_ads  
+display
+
+reeses_mo 
+
+exer_once_week_aglo 
+exer_once_week_agli 
+exer_once_week_nead 
+exer_once_week_dgli 
+exer_once_week_dglo 
+prov_kids_with_aglo 
+prov_kids_with_agli 
+prov_kids_with_nead 
+prov_kids_with_dgli 
+prov_kids_with_dglo 
+legal_pot_aglo 
+legal_pot_agli 
+legal_pot_nead 
+legal_pot_dgli
+legal_pot_dglo
+careful_w_money_aglo
+careful_w_money_agli
+careful_w_money_nead
+careful_w_money_dgli
+careful_w_money_dglo
+
+dr_impt_when_ill_aglo 
+dr_impt_when_ill_agli
+dr_impt_when_ill_nead
+dr_impt_when_ill_dgli
+dr_impt_when_ill_dglo
+try_health_food_aglo
+try_health_food_agli
+try_health_food_nead
+try_health_food_dgli
+try_health_food_dglo
+concern_teeth_gums_aglo
+concern_teeth_gums_agli
+concern_teeth_gums_nead
+concern_teeth_gums_dgli
+concern_teeth_gums_dglo
+regular_checkups_aglo
+regular_checkups_agli
+regular_checkups_nead
+regular_checkups_dgli
+regular_checkups_dglo
+
+snack_btwn_meals_aglo
+snack_btwn_meals_agli
+snack_btwn_meals_nead
+snack_btwn_meals_dgli
+snack_btwn_meals_dglo
+alcohol_at_restur_aglo
+alcohol_at_restur_agli 
+alcohol_at_restur_nead
+alcohol_at_restur_dgli
+alcohol_at_restur_dglo
+freq_eat_sweets_aglo
+freq_eat_sweets_agli
+freq_eat_sweets_nead
+freq_eat_sweets_dgli
+freq_eat_sweets_dglo
+treat_myself_aglo
+treat_myself_agli
+treat_myself_nead
+treat_myself_dgli
+treat_myself_dglo
+
+twx_candy_mo
+snickers_candy_mo
+
+race_white
+race_black
+race_asian
+race_other
+race_not_whiteblack
+
+monthly_netflix
+monthly_hulu
+monthly_amzprime
+
+hispanic_yes
+hispanic_no
+
+gender_male
+gender_female
+
+floor_ads_alw
+floor_ads_some
+floor_ads_nvr
+cart_ads_alw
+cart_ads_some
+cart_ads_nvr
+display_w_product_alw
+display_w_product_some
+display_w_product_nvr;
+run; 
+
+
+libname mylib 'P:\';
+data myfactor;
+set mylib.myvars;
+run;
+/* do the factor analysis - set eigenval rotate=varimax scree PCA */
+proc factor data = myvars
+maxiter=100
+method=principal
+mineigen=1
+rotate=varimax
+msa
+scree
+score
+print
+nfactors=6
+out=myscores;
+var 
+dr_when_ill
+eat_healthy
+checkups 
+
+snack
+sweets
+treat_self;
+run;
+/* rename the factor variables */
+data clusready;
+set myscores;
+rename factor1 = selfcare;
+rename factor2 = indulgent;
+run;
+
+
+proc fastclus data=clusready maxiter=100 maxclusters=2 out=finalclus;
+var 
+selfcare
+indulgent
+weekly_exercise
+legalize_pot
+care_w_money;
+run;    
+
+              
+proc fastclus data=clusready maxiter=100 maxclusters=3 out=finalclus;
+var 
+selfcare
+indulgent
+weekly_exercise
+legalize_pot
+care_w_money;
+run;                                           
+
+proc fastclus data=clusready maxiter=100 maxclusters=4 out=finalclus;
+var 
+selfcare
+indulgent
+weekly_exercise
+legalize_pot
+care_w_money;
+run;    
+
+proc fastclus data=clusready maxiter=100 maxclusters=5 out=finalclus;
+var 
+selfcare
+indulgent
+weekly_exercise
+legalize_pot
+care_w_money;
+run;    
+
+proc fastclus data=clusready maxiter=100 maxclusters=6 out=finalclus;
+var 
+selfcare
+indulgent
+weekly_exercise
+legalize_pot
+care_w_money;
+run;   
+
+proc fastclus data=clusready maxiter=100 maxclusters=7 out=finalclus;
+var 
+selfcare
+indulgent
+weekly_exercise
+legalize_pot
+care_w_money;
+run;   
+
+proc fastclus data=clusready maxiter=100 maxclusters=8 out=finalclus;
+var 
+selfcare
+indulgent
+weekly_exercise
+legalize_pot
+care_w_money;
+run;    
+
+               
+proc hpclus data=clusready maxclusters=8
+noc=abc(b=20 minclusters=2 align=pca criterion=firstpeak);
+/* score puts CLUSTER variable in dataset and OUT= outputs the data set */
+score out=mycluster;
+/* here are the drivers for the HPCLUS cluster solution */
+input 
+selfcare
+indulgent
+weekly_exercise
+legalize_pot
+care_w_money / level=interval;
+/* only the variables listed in the ID statement will be kept in the MYCLUSTER data set*/
+/* so be sure to put your id variable, drivers and descritpor variables in the ID statement */
+/* the drivers are earlyadopt socialphone loser ad_receptivity and the descriptors are coca_cola_classic 
+pepsi_classic 
+espn_sports  
+ikea_furniture  
+kfc_chicken  
+nike_trainers  */
+id myid 
+selfcare indulgent weekly_exercise legalize_pot care_w_money
+rpbc
+twx
+snickers
+white
+black
+asian
+other_race
+not_W_or_B
+netflix
+hulu
+amzprime  
+hispanic_y
+hispanic_n
+male
+female
+floor_ads
+cart_ads  
+display;
+run;  
+proc contents data=mycluster;
+run; 
+
+/*Globalpeak Version*/
+proc hpclus data=clusready maxclusters=8
+noc=abc(b=20 minclusters=2 align=pca criterion=globalpeak);
+/* score puts CLUSTER variable in dataset and OUT= outputs the data set */
+score out=mycluster;
+/* here are the drivers for the HPCLUS cluster solution */
+input 
+selfcare
+indulgent
+weekly_exercise
+legalize_pot
+care_w_money / level=interval;
+/* only the variables listed in the ID statement will be kept in the MYCLUSTER data set*/
+/* so be sure to put your id variable, drivers and descritpor variables in the ID statement */
+/* the drivers are earlyadopt socialphone loser ad_receptivity and the descriptors are coca_cola_classic 
+pepsi_classic 
+espn_sports  
+ikea_furniture  
+kfc_chicken  
+nike_trainers  */
+id myid 
+selfcare indulgent weekly_exercise legalize_pot care_w_money
+rpbc
+twx
+snickers
+white
+black
+asian
+other_race
+not_W_or_B
+netflix
+hulu
+amzprime  
+hispanic_y
+hispanic_n
+male
+female
+floor_ads
+cart_ads  
+display;
+run;  
+proc contents data=mycluster;
+run; 
+
+
+/*Exercise 6: Interpreting descriptor variables*/
+
+proc fastclus data=clusready maxiter=100 out=myclust maxclusters=3;
+var 
+selfcare
+indulgent
+weekly_exercise
+legalize_pot
+care_w_money;
+run;    
+
+/*Sort the data by cluster*/
+Proc sort data= myclust out=mysort;
+By cluster;
+Run;
+
+/*Produce means for descriptor variables*/
+Proc means data=mysort;
+By cluster;
+Var rpbc
+twx
+snickers
+white
+black
+asian
+other_race
+not_W_or_B
+netflix
+hulu
+amzprime  
+hispanic_y
+hispanic_n
+male
+female
+floor_ads
+cart_ads  
+display;
+Run;
