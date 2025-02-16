@@ -1,0 +1,1371 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fmodern\fcharset0 CourierNewPSMT;\f1\fmodern\fcharset0 CourierNewPS-BoldMT;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue255;\red128\green0\blue128;\red0\green128\blue128;
+\red0\green0\blue128;\red0\green128\blue0;\red0\green128\blue0;\red0\green0\blue128;\red0\green128\blue128;
+}
+{\*\expandedcolortbl;;\csgenericrgb\c0\c0\c100000;\csgenericrgb\c50196\c0\c50196;\csgenericrgb\c0\c50196\c50196;
+\csgenericrgb\c0\c0\c50196;\csgenericrgb\c0\c50196\c0;\csgenericrgb\c0\c50196\c0;\csgenericrgb\c0\c0\c50196;\csgenericrgb\c0\c50196\c50196;
+}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs20 \cf2 libname\cf0  mylib \cf3 "P:\\"\cf0 ;\
+\cf2 filename\cf0  datadict \cf3 "P:\\Market Segmentation\\fa15_data.txt"\cf0  \cf2 lrecl\cf0  = 
+\f1\b \cf4 65576
+\f0\b0 \cf0 ;\
+\
+
+\f1\b \cf5 data
+\f0\b0 \cf0  mytemp;\
+\cf2 infile\cf0  datadict;\
+\cf2 input\cf0 \
+\
+myid 
+\f1\b \cf4 1
+\f0\b0 \cf0 -
+\f1\b \cf4 7
+\f0\b0 \cf0 \
+reeses_mo 
+\f1\b \cf4 32771
+\f0\b0 \cf0 \
+\
+exer_once_week_aglo 
+\f1\b \cf4 4624
+\f0\b0 \cf0 \
+exer_once_week_agli 
+\f1\b \cf4 4701
+\f0\b0 \cf0 \
+exer_once_week_nead 
+\f1\b \cf4 4855
+\f0\b0 \cf0 \
+exer_once_week_dgli 
+\f1\b \cf4 4932
+\f0\b0 \cf0 \
+exer_once_week_dglo 
+\f1\b \cf4 5009
+\f0\b0 \cf0 \
+prov_kids_with_aglo 
+\f1\b \cf4 4649
+\f0\b0 \cf0 \
+prov_kids_with_agli 
+\f1\b \cf4 4726
+\f0\b0 \cf0 \
+prov_kids_with_nead 
+\f1\b \cf4 4880
+\f0\b0 \cf0 \
+prov_kids_with_dgli 
+\f1\b \cf4 4957
+\f0\b0 \cf0 \
+prov_kids_with_dglo 
+\f1\b \cf4 5034
+\f0\b0 \cf0 \
+legal_pot_aglo 
+\f1\b \cf4 4655
+\f0\b0 \cf0 \
+legal_pot_agli 
+\f1\b \cf4 4732
+\f0\b0 \cf0 \
+legal_pot_nead 
+\f1\b \cf4 4886
+\f0\b0 \cf0 \
+legal_pot_dgli 
+\f1\b \cf4 4963
+\f0\b0 \cf0 \
+legal_pot_dglo 
+\f1\b \cf4 5040
+\f0\b0 \cf0 \
+careful_w_money_aglo 
+\f1\b \cf4 6102
+\f0\b0 \cf0 \
+careful_w_money_agli 
+\f1\b \cf4 6123
+\f0\b0 \cf0 \
+careful_w_money_nead 
+\f1\b \cf4 6165
+\f0\b0 \cf0 \
+careful_w_money_dgli 
+\f1\b \cf4 6186
+\f0\b0 \cf0 \
+careful_w_money_dglo 
+\f1\b \cf4 6207
+\f0\b0 \cf0 \
+\
+dr_impt_when_ill_aglo 
+\f1\b \cf4 5153
+\f0\b0 \cf0 \
+dr_impt_when_ill_agli 
+\f1\b \cf4 5202
+\f0\b0 \cf0 \
+dr_impt_when_ill_nead 
+\f1\b \cf4 5300
+\f0\b0 \cf0 \
+dr_impt_when_ill_dgli 
+\f1\b \cf4 5349
+\f0\b0 \cf0 \
+dr_impt_when_ill_dglo 
+\f1\b \cf4 5398
+\f0\b0 \cf0 \
+try_health_food_aglo 
+\f1\b \cf4 5151
+\f0\b0 \cf0 \
+try_health_food_agli 
+\f1\b \cf4 5200
+\f0\b0 \cf0 \
+try_health_food_nead 
+\f1\b \cf4 5298
+\f0\b0 \cf0 \
+try_health_food_dgli 
+\f1\b \cf4 5347
+\f0\b0 \cf0 \
+try_health_food_dglo 
+\f1\b \cf4 5396
+\f0\b0 \cf0 \
+concern_teeth_gums_aglo 
+\f1\b \cf4 5191
+\f0\b0 \cf0 \
+concern_teeth_gums_agli 
+\f1\b \cf4 5240
+\f0\b0 \cf0 \
+concern_teeth_gums_nead 
+\f1\b \cf4 5338
+\f0\b0 \cf0 \
+concern_teeth_gums_dgli 
+\f1\b \cf4 5387
+\f0\b0 \cf0 \
+concern_teeth_gums_dglo 
+\f1\b \cf4 5436
+\f0\b0 \cf0 \
+regular_checkups_aglo 
+\f1\b \cf4 5149
+\f0\b0 \cf0 \
+regular_checkups_agli 
+\f1\b \cf4 5198
+\f0\b0 \cf0 \
+regular_checkups_nead 
+\f1\b \cf4 5296
+\f0\b0 \cf0 \
+regular_checkups_dgli 
+\f1\b \cf4 5345
+\f0\b0 \cf0 \
+regular_checkups_dglo 
+\f1\b \cf4 5394
+\f0\b0 \cf0 \
+\
+snack_btwn_meals_aglo 
+\f1\b \cf4 4280
+\f0\b0 \cf0 \
+snack_btwn_meals_agli 
+\f1\b \cf4 4327
+\f0\b0 \cf0 \
+snack_btwn_meals_nead 
+\f1\b \cf4 4421
+\f0\b0 \cf0 \
+snack_btwn_meals_dgli 
+\f1\b \cf4 4468
+\f0\b0 \cf0 \
+snack_btwn_meals_dglo 
+\f1\b \cf4 4515
+\f0\b0 \cf0 \
+alcohol_at_restur_aglo 
+\f1\b \cf4 4291
+\f0\b0 \cf0 \
+alcohol_at_restur_agli 
+\f1\b \cf4 4338
+\f0\b0 \cf0 \
+alcohol_at_restur_nead 
+\f1\b \cf4 4432
+\f0\b0 \cf0 \
+alcohol_at_restur_dgli 
+\f1\b \cf4 4479
+\f0\b0 \cf0 \
+alcohol_at_restur_dglo 
+\f1\b \cf4 4526
+\f0\b0 \cf0 \
+freq_eat_sweets_aglo 
+\f1\b \cf4 4292
+\f0\b0 \cf0 \
+freq_eat_sweets_agli 
+\f1\b \cf4 4339
+\f0\b0 \cf0 \
+freq_eat_sweets_nead 
+\f1\b \cf4 4433
+\f0\b0 \cf0 \
+freq_eat_sweets_dgli 
+\f1\b \cf4 4480
+\f0\b0 \cf0 \
+freq_eat_sweets_dglo 
+\f1\b \cf4 4527
+\f0\b0 \cf0 \
+treat_myself_aglo 
+\f1\b \cf4 4034
+\f0\b0 \cf0 \
+treat_myself_agli 
+\f1\b \cf4 4053
+\f0\b0 \cf0 \
+treat_myself_nead 
+\f1\b \cf4 4091
+\f0\b0 \cf0 \
+treat_myself_dgli 
+\f1\b \cf4 4110
+\f0\b0 \cf0 \
+treat_myself_dglo 
+\f1\b \cf4 4129
+\f0\b0 \cf0 \
+\
+twx_candy_mo 
+\f1\b \cf4 32788
+\f0\b0 \cf0 \
+snickers_candy_mo 
+\f1\b \cf4 32778
+\f0\b0 \cf0 \
+\
+race_white 
+\f1\b \cf4 2420
+\f0\b0 \cf0 \
+race_black 
+\f1\b \cf4 2421
+\f0\b0 \cf0 \
+race_asian 
+\f1\b \cf4 2422
+\f0\b0 \cf0 \
+race_other 
+\f1\b \cf4 2423
+\f0\b0 \cf0 \
+race_not_whiteblack 
+\f1\b \cf4 2424
+\f0\b0 \cf0 \
+\
+monthly_netflix 
+\f1\b \cf4 14247
+\f0\b0 \cf0 \
+monthly_hulu 
+\f1\b \cf4 14245
+\f0\b0 \cf0 \
+monthly_amzprime 
+\f1\b \cf4 14241
+\f0\b0 \cf0 \
+\
+hispanic_yes 
+\f1\b \cf4 2371
+\f0\b0 \cf0 \
+hispanic_no 
+\f1\b \cf4 2372
+\f0\b0 \cf0 \
+\
+gender_male 
+\f1\b \cf4 2383
+\f0\b0 \cf0 \
+gender_female 
+\f1\b \cf4 2384
+\f0\b0 \cf0 \
+\
+floor_ads_alw 
+\f1\b \cf4 44697
+\f0\b0 \cf0 \
+floor_ads_some 
+\f1\b \cf4 44712
+\f0\b0 \cf0 \
+floor_ads_nvr 
+\f1\b \cf4 44727
+\f0\b0 \cf0 \
+cart_ads_alw 
+\f1\b \cf4 44698
+\f0\b0 \cf0 \
+cart_ads_some 
+\f1\b \cf4 44713
+\f0\b0 \cf0 \
+cart_ads_nvr 
+\f1\b \cf4 44728
+\f0\b0 \cf0 \
+display_w_product_alw 
+\f1\b \cf4 44701
+\f0\b0 \cf0 \
+display_w_product_some 
+\f1\b \cf4 44716
+\f0\b0 \cf0 \
+display_w_product_nvr 
+\f1\b \cf4 44731
+\f0\b0 \cf0 \
+\
+run;\
+\
+\
+
+\f1\b \cf5 proc
+\f0\b0 \cf0  
+\f1\b \cf5 format
+\f0\b0 \cf0 ;\
+\cf2 value\cf0  my5scale\
+    
+\f1\b \cf4 1
+\f0\b0 \cf0  = \cf3 "disagree a lot"\cf0 \
+    
+\f1\b \cf4 2
+\f0\b0 \cf0  = \cf3 "disagree a little"\cf0 \
+    
+\f1\b \cf4 3
+\f0\b0 \cf0  = \cf3 "neither agree nor disagree"\cf0 \
+    
+\f1\b \cf4 4
+\f0\b0 \cf0  = \cf3 "agree a little"\cf0 \
+    
+\f1\b \cf4 5
+\f0\b0 \cf0  = \cf3 "agree a lot"\cf0 ;\
+\cf2 value\cf0  yesno\
+    
+\f1\b \cf4 0
+\f0\b0 \cf0  = \cf3 "no"\cf0 \
+    
+\f1\b \cf4 1
+\f0\b0 \cf0  = \cf3 "yes"\cf0 ;\
+\cf2 value\cf0  my3scale\
+	
+\f1\b \cf4 1
+\f0\b0 \cf0  = \cf3 "never"\cf0 \
+	
+\f1\b \cf4 2
+\f0\b0 \cf0  = \cf3 "sometimes"\cf0 \
+	
+\f1\b \cf4 3
+\f0\b0 \cf0  = \cf3 "always"\cf0 \
+run;\
+\
+\cf6 /* do that by creating a new temp sas data set myvars by starting with the temp sas data set mytemp */\cf0 \
+
+\f1\b \cf5 data
+\f0\b0 \cf0  myvars;\
+\cf2 set\cf0  mytemp;\
+\
+\cf2 if\cf0  exer_once_week_aglo = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  weekly_exercise = 
+\f1\b \cf4 5
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  exer_once_week_agli = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  weekly_exercise = 
+\f1\b \cf4 4
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  exer_once_week_nead = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  weekly_exercise = 
+\f1\b \cf4 3
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  exer_once_week_dgli = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  weekly_exercise = 
+\f1\b \cf4 2
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  exer_once_week_dglo = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  weekly_exercise = 
+\f1\b \cf4 1
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  prov_kids_with_aglo = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  provide_kids = 
+\f1\b \cf4 5
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  prov_kids_with_agli = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  provide_kids = 
+\f1\b \cf4 4
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  prov_kids_with_nead = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  provide_kids = 
+\f1\b \cf4 3
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  prov_kids_with_dgli = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  provide_kids = 
+\f1\b \cf4 2
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  prov_kids_with_dglo = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  provide_kids = 
+\f1\b \cf4 1
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  legal_pot_aglo = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  legalize_pot = 
+\f1\b \cf4 5
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  legal_pot_agli = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  legalize_pot = 
+\f1\b \cf4 4
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  legal_pot_nead = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  legalize_pot = 
+\f1\b \cf4 3
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  legal_pot_dgli = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  legalize_pot = 
+\f1\b \cf4 2
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  legal_pot_dglo = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  legalize_pot = 
+\f1\b \cf4 1
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  careful_w_money_aglo = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  care_w_money = 
+\f1\b \cf4 5
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  careful_w_money_agli = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  care_w_money = 
+\f1\b \cf4 4
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  careful_w_money_nead = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  care_w_money = 
+\f1\b \cf4 3
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  careful_w_money_dgli = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  care_w_money = 
+\f1\b \cf4 2
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  careful_w_money_dglo = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  care_w_money = 
+\f1\b \cf4 1
+\f0\b0 \cf0 ;\
+\
+\cf2 if\cf0  dr_impt_when_ill_aglo = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  dr_when_ill = 
+\f1\b \cf4 5
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  dr_impt_when_ill_agli = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  dr_when_ill = 
+\f1\b \cf4 4
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  dr_impt_when_ill_nead = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  dr_when_ill = 
+\f1\b \cf4 3
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  dr_impt_when_ill_dgli = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  dr_when_ill = 
+\f1\b \cf4 2
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  dr_impt_when_ill_dglo = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  dr_when_ill = 
+\f1\b \cf4 1
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  try_health_food_aglo = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  eat_healthy = 
+\f1\b \cf4 5
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  try_health_food_agli = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  eat_healthy = 
+\f1\b \cf4 4
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  try_health_food_nead = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  eat_healthy = 
+\f1\b \cf4 3
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  try_health_food_dgli = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  eat_healthy = 
+\f1\b \cf4 2
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  try_health_food_dglo = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  eat_healthy = 
+\f1\b \cf4 1
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  concern_teeth_gums_aglo = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  teeth_gums = 
+\f1\b \cf4 5
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  concern_teeth_gums_agli = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  teeth_gums = 
+\f1\b \cf4 4
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  concern_teeth_gums_nead = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  teeth_gums = 
+\f1\b \cf4 3
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  concern_teeth_gums_dgli = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  teeth_gums = 
+\f1\b \cf4 2
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  concern_teeth_gums_dglo = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  teeth_gums = 
+\f1\b \cf4 1
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  regular_checkups_aglo = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  checkups = 
+\f1\b \cf4 5
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  regular_checkups_agli = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  checkups = 
+\f1\b \cf4 4
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  regular_checkups_nead = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  checkups = 
+\f1\b \cf4 3
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  regular_checkups_dgli = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  checkups = 
+\f1\b \cf4 2
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  regular_checkups_dglo = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  checkups = 
+\f1\b \cf4 1
+\f0\b0 \cf0 ;\
+\
+\cf2 if\cf0  snack_btwn_meals_aglo = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  snack = 
+\f1\b \cf4 5
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  snack_btwn_meals_agli = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  snack = 
+\f1\b \cf4 4
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  snack_btwn_meals_nead = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  snack = 
+\f1\b \cf4 3
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  snack_btwn_meals_dgli = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  snack = 
+\f1\b \cf4 2
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  snack_btwn_meals_dglo = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  snack = 
+\f1\b \cf4 1
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  alcohol_at_restur_aglo = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  alcohol = 
+\f1\b \cf4 5
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  alcohol_at_restur_agli = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  alcohol = 
+\f1\b \cf4 4
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  alcohol_at_restur_nead = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  alcohol = 
+\f1\b \cf4 3
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  alcohol_at_restur_dgli = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  alcohol = 
+\f1\b \cf4 2
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  alcohol_at_restur_dglo = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  alcohol = 
+\f1\b \cf4 1
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  freq_eat_sweets_aglo = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  sweets = 
+\f1\b \cf4 5
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  freq_eat_sweets_agli = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  sweets = 
+\f1\b \cf4 4
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  freq_eat_sweets_nead = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  sweets = 
+\f1\b \cf4 3
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  freq_eat_sweets_dgli = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  sweets = 
+\f1\b \cf4 2
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  freq_eat_sweets_dglo = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  sweets = 
+\f1\b \cf4 1
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  treat_myself_aglo = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  treat_self = 
+\f1\b \cf4 5
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  treat_myself_agli = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  treat_self = 
+\f1\b \cf4 4
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  treat_myself_nead = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  treat_self = 
+\f1\b \cf4 3
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  treat_myself_dgli = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  treat_self = 
+\f1\b \cf4 2
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  treat_myself_dglo = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  treat_self = 
+\f1\b \cf4 1
+\f0\b0 \cf0 ;\
+\
+\cf6 /* now set up binary yes \'96 no variables knowing that missing values get a zero and a 1 gets a 1 */\cf0 \
+\cf2 if\cf0  reeses_mo = 
+\f1\b \cf4 .
+\f0\b0 \cf0  \cf2 then\cf0  rpbc = 
+\f1\b \cf4 0
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  reeses_mo = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  rpbc = 
+\f1\b \cf4 1
+\f0\b0 \cf0 ;\
+\
+\cf2 if\cf0  twx_candy_mo = 
+\f1\b \cf4 .
+\f0\b0 \cf0  \cf2 then\cf0  twx = 
+\f1\b \cf4 0
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  twx_candy_mo = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  twx = 
+\f1\b \cf4 1
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  snickers_candy_mo = 
+\f1\b \cf4 .
+\f0\b0 \cf0  \cf2 then\cf0  snickers = 
+\f1\b \cf4 0
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  snickers_candy_mo = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  snickers = 
+\f1\b \cf4 1
+\f0\b0 \cf0 ;\
+\
+\cf2 if\cf0  race_white = 
+\f1\b \cf4 .
+\f0\b0 \cf0  \cf2 then\cf0  white = 
+\f1\b \cf4 0
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  race_white = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  white = 
+\f1\b \cf4 1
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  race_black = 
+\f1\b \cf4 .
+\f0\b0 \cf0  \cf2 then\cf0  black = 
+\f1\b \cf4 0
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  race_black = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  black = 
+\f1\b \cf4 1
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  race_asian = 
+\f1\b \cf4 .
+\f0\b0 \cf0  \cf2 then\cf0  asian = 
+\f1\b \cf4 0
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  race_asian = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  asian = 
+\f1\b \cf4 1
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  race_other = 
+\f1\b \cf4 .
+\f0\b0 \cf0  \cf2 then\cf0  other_race = 
+\f1\b \cf4 0
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  race_other = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  other_race = 
+\f1\b \cf4 1
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  race_not_whiteblack = 
+\f1\b \cf4 .
+\f0\b0 \cf0  \cf2 then\cf0  not_W_or_B = 
+\f1\b \cf4 0
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  race_not_whiteblack = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  not_W_or_B = 
+\f1\b \cf4 1
+\f0\b0 \cf0 ;\
+\
+\cf2 if\cf0  monthly_netflix = 
+\f1\b \cf4 .
+\f0\b0 \cf0  \cf2 then\cf0  netflix = 
+\f1\b \cf4 0
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  monthly_netflix = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  netflix = 
+\f1\b \cf4 1
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  monthly_hulu = 
+\f1\b \cf4 .
+\f0\b0 \cf0  \cf2 then\cf0  hulu = 
+\f1\b \cf4 0
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  monthly_hulu = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  hulu = 
+\f1\b \cf4 1
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  monthly_amzprime = 
+\f1\b \cf4 .
+\f0\b0 \cf0  \cf2 then\cf0  amzprime = 
+\f1\b \cf4 0
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  monthly_amzprime = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  amzprime = 
+\f1\b \cf4 1
+\f0\b0 \cf0 ;\
+\
+\cf2 if\cf0  hispanic_yes = 
+\f1\b \cf4 .
+\f0\b0 \cf0  \cf2 then\cf0  hispanic_y = 
+\f1\b \cf4 0
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  hispanic_yes = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  hispanic_y = 
+\f1\b \cf4 1
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  hispanic_no = 
+\f1\b \cf4 .
+\f0\b0 \cf0  \cf2 then\cf0  hispanic_n = 
+\f1\b \cf4 0
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  hispanic_no = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  hispanic_n = 
+\f1\b \cf4 1
+\f0\b0 \cf0 ;\
+\
+\cf2 if\cf0  gender_male = 
+\f1\b \cf4 .
+\f0\b0 \cf0  \cf2 then\cf0  male = 
+\f1\b \cf4 0
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  gender_male = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  male = 
+\f1\b \cf4 1
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  gender_female = 
+\f1\b \cf4 .
+\f0\b0 \cf0  \cf2 then\cf0  female = 
+\f1\b \cf4 0
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  gender_female = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  female = 
+\f1\b \cf4 1
+\f0\b0 \cf0 ;\
+\
+\cf6 /* set up variable for three-point shopping scale*/\cf0 \
+\cf2 if\cf0  floor_ads_alw = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  floor_ads = 
+\f1\b \cf4 3
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  floor_ads_some = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  floor_ads = 
+\f1\b \cf4 2
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  floor_ads_nvr = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  floor_ads = 
+\f1\b \cf4 1
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  cart_ads_alw = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  cart_ads = 
+\f1\b \cf4 3
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  cart_ads_some = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  cart_ads = 
+\f1\b \cf4 2
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  cart_ads_nvr = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  cart_ads = 
+\f1\b \cf4 1
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  display_w_product_alw = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  display = 
+\f1\b \cf4 3
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  display_w_product_some = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  display = 
+\f1\b \cf4 2
+\f0\b0 \cf0 ;\
+\cf2 if\cf0  display_w_product_nvr = 
+\f1\b \cf4 1
+\f0\b0 \cf0  \cf2 then\cf0  display = 
+\f1\b \cf4 1
+\f0\b0 \cf0 ;\
+\
+\cf6 /* now attach the values for each of the variables using the proc format labels */\cf0 \
+\cf2 format\cf0    weekly_exercise  provide_kids  legalize_pot  care_w_money\
+		 dr_when_ill  eat_healthy  teeth_gums  checkups  \
+		 snack  alcohol  sweets  treat_self  \cf4 my5scale.\cf0 \
+\
+		 rpbc  twx  snickers\
+		 white  black  asian  other_race  not_W_or_B\
+		 netflix  hulu  amzprime  \
+		 hispanic_y  hispanic_n  male  female  \cf4 yesno.\cf0 \
+\
+		 floor_ads  cart_ads  display  \cf4 my3scale.\cf0  ;\
+
+\f1\b \cf5 run
+\f0\b0 \cf0 ;\
+\
+\cf6 /* now run freqs to check your work */\cf0 \
+
+\f1\b \cf5 proc
+\f0\b0 \cf0  
+\f1\b \cf5 freq
+\f0\b0 \cf0  \cf2 data\cf0  = myvars;\
+\cf2 tables\cf0 \
+rpbc\
+weekly_exercise\
+provide_kids\
+legalize_pot\
+care_w_money\
+dr_when_ill\
+eat_healthy\
+teeth_gums\
+checkups \
+snack\
+alcohol\
+sweets\
+treat_self\
+twx\
+snickers\
+white\
+black\
+asian\
+other_race\
+not_W_or_B\
+netflix\
+hulu\
+amzprime  \
+hispanic_y\
+hispanic_n\
+male\
+female\
+floor_ads\
+cart_ads  \
+display\
+\
+reeses_mo \
+\
+exer_once_week_aglo \
+exer_once_week_agli \
+exer_once_week_nead \
+exer_once_week_dgli \
+exer_once_week_dglo \
+prov_kids_with_aglo \
+prov_kids_with_agli \
+prov_kids_with_nead \
+prov_kids_with_dgli \
+prov_kids_with_dglo \
+legal_pot_aglo \
+legal_pot_agli \
+legal_pot_nead \
+legal_pot_dgli\
+legal_pot_dglo\
+careful_w_money_aglo\
+careful_w_money_agli\
+careful_w_money_nead\
+careful_w_money_dgli\
+careful_w_money_dglo\
+\
+dr_impt_when_ill_aglo \
+dr_impt_when_ill_agli\
+dr_impt_when_ill_nead\
+dr_impt_when_ill_dgli\
+dr_impt_when_ill_dglo\
+try_health_food_aglo\
+try_health_food_agli\
+try_health_food_nead\
+try_health_food_dgli\
+try_health_food_dglo\
+concern_teeth_gums_aglo\
+concern_teeth_gums_agli\
+concern_teeth_gums_nead\
+concern_teeth_gums_dgli\
+concern_teeth_gums_dglo\
+regular_checkups_aglo\
+regular_checkups_agli\
+regular_checkups_nead\
+regular_checkups_dgli\
+regular_checkups_dglo\
+\
+snack_btwn_meals_aglo\
+snack_btwn_meals_agli\
+snack_btwn_meals_nead\
+snack_btwn_meals_dgli\
+snack_btwn_meals_dglo\
+alcohol_at_restur_aglo\
+alcohol_at_restur_agli \
+alcohol_at_restur_nead\
+alcohol_at_restur_dgli\
+alcohol_at_restur_dglo\
+freq_eat_sweets_aglo\
+freq_eat_sweets_agli\
+freq_eat_sweets_nead\
+freq_eat_sweets_dgli\
+freq_eat_sweets_dglo\
+treat_myself_aglo\
+treat_myself_agli\
+treat_myself_nead\
+treat_myself_dgli\
+treat_myself_dglo\
+\
+twx_candy_mo\
+snickers_candy_mo\
+\
+race_white\
+race_black\
+race_asian\
+race_other\
+race_not_whiteblack\
+\
+monthly_netflix\
+monthly_hulu\
+monthly_amzprime\
+\
+hispanic_yes\
+hispanic_no\
+\
+gender_male\
+gender_female\
+\
+floor_ads_alw\
+floor_ads_some\
+floor_ads_nvr\
+cart_ads_alw\
+cart_ads_some\
+cart_ads_nvr\
+display_w_product_alw\
+display_w_product_some\
+display_w_product_nvr;\
+
+\f1\b \cf5 run
+\f0\b0 \cf0 ; \
+\
+\
+\cf2 libname\cf0  mylib \cf3 'P:\\'\cf0 ;\
+
+\f1\b \cf5 data
+\f0\b0 \cf0  myfactor;\
+\cf2 set\cf0  mylib.myvars;\
+
+\f1\b \cf5 run
+\f0\b0 \cf0 ;\
+\cf6 /* do the factor analysis - set eigenval rotate=varimax scree PCA */\cf0 \
+
+\f1\b \cf5 proc
+\f0\b0 \cf0  
+\f1\b \cf5 factor
+\f0\b0 \cf0  \cf2 data\cf0  = myvars\
+\cf2 maxiter\cf0 =
+\f1\b \cf4 100
+\f0\b0 \cf0 \
+\cf2 method\cf0 =principal\
+\cf2 mineigen\cf0 =
+\f1\b \cf4 1
+\f0\b0 \cf0 \
+\cf2 rotate\cf0 =varimax\
+\cf2 msa\cf0 \
+\cf2 scree\cf0 \
+\cf2 score\cf0 \
+\cf2 print\cf0 \
+\cf2 nfactors\cf0 =
+\f1\b \cf4 6
+\f0\b0 \cf0 \
+\cf2 out\cf0 =myscores;\
+\cf2 var\cf0  \
+dr_when_ill\
+eat_healthy\
+checkups \
+\
+snack\
+sweets\
+treat_self;\
+
+\f1\b \cf5 run
+\f0\b0 \cf0 ;\
+\cf6 /* rename the factor variables */\cf0 \
+
+\f1\b \cf5 data
+\f0\b0 \cf0  clusready;\
+\cf2 set\cf0  myscores;\
+\cf2 rename\cf0  factor1 = selfcare;\
+\cf2 rename\cf0  factor2 = indulgent;\
+
+\f1\b \cf5 run
+\f0\b0 \cf0 ;\
+\
+\
+
+\f1\b \cf5 proc
+\f0\b0 \cf0  
+\f1\b \cf5 fastclus
+\f0\b0 \cf0  \cf2 data\cf0 =clusready \cf2 maxiter\cf0 =
+\f1\b \cf4 100
+\f0\b0 \cf0  \cf2 maxclusters\cf0 =
+\f1\b \cf4 2
+\f0\b0 \cf0  out=finalclus;\
+\cf2 var\cf0  \
+selfcare\
+indulgent\
+weekly_exercise\
+legalize_pot\
+care_w_money;\
+
+\f1\b \cf5 run
+\f0\b0 \cf0 ;    \
+\
+              \
+
+\f1\b \cf5 proc
+\f0\b0 \cf0  
+\f1\b \cf5 fastclus
+\f0\b0 \cf0  \cf2 data\cf0 =clusready \cf2 maxiter\cf0 =
+\f1\b \cf4 100
+\f0\b0 \cf0  \cf2 maxclusters\cf0 =
+\f1\b \cf4 3
+\f0\b0 \cf0  out=finalclus;\
+\cf2 var\cf0  \
+selfcare\
+indulgent\
+weekly_exercise\
+legalize_pot\
+care_w_money;\
+
+\f1\b \cf5 run
+\f0\b0 \cf0 ;                                           \
+\
+
+\f1\b \cf5 proc
+\f0\b0 \cf0  
+\f1\b \cf5 fastclus
+\f0\b0 \cf0  \cf2 data\cf0 =clusready \cf2 maxiter\cf0 =
+\f1\b \cf4 100
+\f0\b0 \cf0  \cf2 maxclusters\cf0 =
+\f1\b \cf4 4
+\f0\b0 \cf0  out=finalclus;\
+\cf2 var\cf0  \
+selfcare\
+indulgent\
+weekly_exercise\
+legalize_pot\
+care_w_money;\
+
+\f1\b \cf5 run
+\f0\b0 \cf0 ;    \
+\
+
+\f1\b \cf5 proc
+\f0\b0 \cf0  
+\f1\b \cf5 fastclus
+\f0\b0 \cf0  \cf2 data\cf0 =clusready \cf2 maxiter\cf0 =
+\f1\b \cf4 100
+\f0\b0 \cf0  \cf2 maxclusters\cf0 =
+\f1\b \cf4 5
+\f0\b0 \cf0  out=finalclus;\
+\cf2 var\cf0  \
+selfcare\
+indulgent\
+weekly_exercise\
+legalize_pot\
+care_w_money;\
+
+\f1\b \cf5 run
+\f0\b0 \cf0 ;    \
+\
+
+\f1\b \cf5 proc
+\f0\b0 \cf0  
+\f1\b \cf5 fastclus
+\f0\b0 \cf0  \cf2 data\cf0 =clusready \cf2 maxiter\cf0 =
+\f1\b \cf4 100
+\f0\b0 \cf0  \cf2 maxclusters\cf0 =
+\f1\b \cf4 6
+\f0\b0 \cf0  out=finalclus;\
+\cf2 var\cf0  \
+selfcare\
+indulgent\
+weekly_exercise\
+legalize_pot\
+care_w_money;\
+
+\f1\b \cf5 run
+\f0\b0 \cf0 ;   \
+\
+
+\f1\b \cf5 proc
+\f0\b0 \cf0  
+\f1\b \cf5 fastclus
+\f0\b0 \cf0  \cf2 data\cf0 =clusready \cf2 maxiter\cf0 =
+\f1\b \cf4 100
+\f0\b0 \cf0  \cf2 maxclusters\cf0 =
+\f1\b \cf4 7
+\f0\b0 \cf0  out=finalclus;\
+\cf2 var\cf0  \
+selfcare\
+indulgent\
+weekly_exercise\
+legalize_pot\
+care_w_money;\
+
+\f1\b \cf5 run
+\f0\b0 \cf0 ;   \
+\
+
+\f1\b \cf5 proc
+\f0\b0 \cf0  
+\f1\b \cf5 fastclus
+\f0\b0 \cf0  \cf2 data\cf0 =clusready \cf2 maxiter\cf0 =
+\f1\b \cf4 100
+\f0\b0 \cf0  \cf2 maxclusters\cf0 =
+\f1\b \cf4 8
+\f0\b0 \cf0  out=finalclus;\
+\cf2 var\cf0  \
+selfcare\
+indulgent\
+weekly_exercise\
+legalize_pot\
+care_w_money;\
+
+\f1\b \cf5 run
+\f0\b0 \cf0 ;    \
+\
+               \
+
+\f1\b \cf5 proc
+\f0\b0 \cf0  
+\f1\b \cf5 hpclus
+\f0\b0 \cf0  data=clusready maxclusters=
+\f1\b \cf4 8
+\f0\b0 \cf0 \
+noc=abc(b=
+\f1\b \cf4 20
+\f0\b0 \cf0  minclusters=
+\f1\b \cf4 2
+\f0\b0 \cf0  align=pca criterion=firstpeak);\
+\cf6 /* score puts CLUSTER variable in dataset and OUT= outputs the data set */\cf0 \
+score out=mycluster;\
+\cf6 /* here are the drivers for the HPCLUS cluster solution */\cf0 \
+\cf2 input\cf0  \
+selfcare\
+indulgent\
+weekly_exercise\
+legalize_pot\
+care_w_money / level=interval;\
+\cf6 /* only the variables listed in the ID statement will be kept in the MYCLUSTER data set*/\cf0 \
+\cf6 /* so be sure to put your id variable, drivers and descritpor variables in the ID statement */\cf0 \
+\cf6 /* the drivers are earlyadopt socialphone loser ad_receptivity and the descriptors are coca_cola_classic \
+pepsi_classic \
+espn_sports  \
+ikea_furniture  \
+kfc_chicken  \
+nike_trainers  */\cf0 \
+\cf2 id\cf0  myid \
+selfcare indulgent weekly_exercise legalize_pot care_w_money\
+rpbc\
+twx\
+snickers\
+white\
+black\
+asian\
+other_race\
+not_W_or_B\
+netflix\
+hulu\
+amzprime  \
+hispanic_y\
+hispanic_n\
+male\
+female\
+floor_ads\
+cart_ads  \
+display;\
+
+\f1\b \cf5 run
+\f0\b0 \cf0 ;  \
+
+\f1\b \cf5 proc
+\f0\b0 \cf0  
+\f1\b \cf5 contents
+\f0\b0 \cf0  \cf2 data\cf0 =mycluster;\
+
+\f1\b \cf5 run
+\f0\b0 \cf0 ; \
+\
+\cf6 /*Globalpeak Version*/\cf0 \
+
+\f1\b \cf5 proc
+\f0\b0 \cf0  
+\f1\b \cf5 hpclus
+\f0\b0 \cf0  data=clusready maxclusters=
+\f1\b \cf4 8
+\f0\b0 \cf0 \
+noc=abc(b=
+\f1\b \cf4 20
+\f0\b0 \cf0  minclusters=
+\f1\b \cf4 2
+\f0\b0 \cf0  align=pca criterion=globalpeak);\
+\cf6 /* score puts CLUSTER variable in dataset and OUT= outputs the data set */\cf0 \
+score out=mycluster;\
+\cf6 /* here are the drivers for the HPCLUS cluster solution */\cf0 \
+\cf2 input\cf0  \
+selfcare\
+indulgent\
+weekly_exercise\
+legalize_pot\
+care_w_money / level=interval;\
+\cf6 /* only the variables listed in the ID statement will be kept in the MYCLUSTER data set*/\cf0 \
+\cf6 /* so be sure to put your id variable, drivers and descritpor variables in the ID statement */\cf0 \
+\cf6 /* the drivers are earlyadopt socialphone loser ad_receptivity and the descriptors are coca_cola_classic \
+pepsi_classic \
+espn_sports  \
+ikea_furniture  \
+kfc_chicken  \
+nike_trainers  */\cf0 \
+\cf2 id\cf0  myid \
+selfcare indulgent weekly_exercise legalize_pot care_w_money\
+rpbc\
+twx\
+snickers\
+white\
+black\
+asian\
+other_race\
+not_W_or_B\
+netflix\
+hulu\
+amzprime  \
+hispanic_y\
+hispanic_n\
+male\
+female\
+floor_ads\
+cart_ads  \
+display;\
+
+\f1\b \cf5 run
+\f0\b0 \cf0 ;  \
+
+\f1\b \cf5 proc
+\f0\b0 \cf0  
+\f1\b \cf5 contents
+\f0\b0 \cf0  \cf2 data\cf0 =mycluster;\
+
+\f1\b \cf5 run
+\f0\b0 \cf0 ; \
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf7 /*Exercise 6: Interpreting descriptor variables*/\cf0 \
+\
+
+\f1\b \cf8 proc
+\f0\b0 \cf0  
+\f1\b \cf8 fastclus
+\f0\b0 \cf0  \cf2 data\cf0 =clusready \cf2 maxiter\cf0 =
+\f1\b \cf9 100
+\f0\b0 \cf0  out=myclust \cf2 maxclusters\cf0 =
+\f1\b \cf9 3
+\f0\b0 \cf0 ;\
+\cf2 var\cf0  \
+selfcare\
+indulgent\
+weekly_exercise\
+legalize_pot\
+care_w_money;\
+
+\f1\b \cf8 run
+\f0\b0 \cf0 ;    \
+\
+\cf7 /*Sort the data by cluster*/\cf0 \
+
+\f1\b \cf8 Proc
+\f0\b0 \cf0  
+\f1\b \cf8 sort
+\f0\b0 \cf0  \cf2 data\cf0 = myclust \cf2 out\cf0 =mysort;\
+\cf2 By\cf0  cluster;\
+
+\f1\b \cf8 Run
+\f0\b0 \cf0 ;\
+\
+\cf7 /*Produce means for descriptor variables*/\cf0 \
+
+\f1\b \cf8 Proc
+\f0\b0 \cf0  
+\f1\b \cf8 means
+\f0\b0 \cf0  \cf2 data\cf0 =mysort;\
+\cf2 By\cf0  cluster;\
+\cf2 Var\cf0  rpbc\
+twx\
+snickers\
+white\
+black\
+asian\
+other_race\
+not_W_or_B\
+netflix\
+hulu\
+amzprime  \
+hispanic_y\
+hispanic_n\
+male\
+female\
+floor_ads\
+cart_ads  \
+display;\
+
+\f1\b \cf8 Run
+\f0\b0 \cf0 ;\
+}
